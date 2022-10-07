@@ -51,7 +51,7 @@ namespace Algo1
         {
             for (int i = 1; i < n; i++)
             {
-                for (int j = 0; j < n - i ; j++)
+                for (int j = 0; j < n - i; j++)
                 {
                     if (a[j] > a[j + 1])
 
@@ -63,8 +63,16 @@ namespace Algo1
                     }
                 }
             }
-         
-            // gabisa committ
+            static void main(string[] args)
+            {
+                Program myList = new Program();
+                myList.read();
+                myList.bubbleShortArray();
+                myList.display();
+                Console.WriteLine("\n\n Tekan Tombol Apa saja untuk keluar.");
+                Console.Read();
+            }
+
         }
     }
 }
